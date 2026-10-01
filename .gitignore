@@ -1,0 +1,11 @@
+# Java compiled files
+*.class
+
+# VS Code
+.vscode/
+
+# Python virtual environment
+.venv/
+
+# macOS
+.DS_Store
