@@ -1,6 +1,6 @@
 package ca.mcgill.ecse420.a1;
 
-public class DeadlockAvoidance {
+public class DeadlockExample {
 
     private static final Object LOCK_A = new Object();
     private static final Object LOCK_B = new Object();
