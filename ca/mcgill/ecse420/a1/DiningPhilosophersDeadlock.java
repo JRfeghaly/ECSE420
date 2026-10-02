@@ -3,6 +3,7 @@ package ca.mcgill.ecse420.a1;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+//question 3.1
 public class DiningPhilosophersDeadlock {
 
     public static void main(String[] args) {

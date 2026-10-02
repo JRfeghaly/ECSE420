@@ -153,7 +153,7 @@ public class MatrixMultiplication {
         System.out.println("Sequential and parallel results match: " + resultsMatch);
     }
 
-    // Question 1.3
+    //question 1.3
     public static void measureExecutionTime(double[][] a, double[][] b, int numberThreads) {
         long startTime = System.nanoTime();
         sequentialMultiplyMatrix(a, b);
@@ -177,7 +177,7 @@ public class MatrixMultiplication {
         measureExecutionTime(a, b, numberThreads);
     }
 
-    // Question 1.4
+    //question 1.4
     public static void runThreadBenchmark() {
         System.out.println("Generating " + THREAD_BENCHMARK_SIZE + " x " + THREAD_BENCHMARK_SIZE + " matrices...");
         double[][] a = generateRandomMatrix(THREAD_BENCHMARK_SIZE, THREAD_BENCHMARK_SIZE);
@@ -225,7 +225,7 @@ public class MatrixMultiplication {
         System.out.println("Results saved to thread_results.csv");
     }
 
-    // Reads the best thread count produced by Question 1.4
+    //reads the best thread count produced by Question 1.4
     private static int getBestThreadCountFromCsv() {
         String fileName = "thread_results.csv";
         double minimumTime = Double.MAX_VALUE;
@@ -254,7 +254,7 @@ public class MatrixMultiplication {
         return bestThreadCount;
     }
 
-    // Question 1.5
+    //question 1.5
     public static void benchmarkMatrixSizes(int bestThreadCount) {
 
         System.out.println("Using " + bestThreadCount + " threads for parallel tests.");
